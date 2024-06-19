@@ -1,9 +1,9 @@
 const convertToCelsius = function(fahrDegree) {
-  return (fahrDegree -32) * 5/9)
+  return Math.round(((fahrDegree - 32) * 5/9) * 10) / 10;
 };
 
 const convertToFahrenheit = function(celDegree) {
-  return (celDegree * 9/5 + 32)
+  return  Math.round(((9/5 * celDegree) + 32) * 10) / 10;
 };
 
 // Do not edit below this line
